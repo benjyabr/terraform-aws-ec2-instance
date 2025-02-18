@@ -290,6 +290,11 @@ variable "cpu_threads_per_core" {
   default     = null
 }
 
+variable "instance_market_options" {
+  description = "can add a block that can make the instance a spot instance"
+  type = any
+  default = {}
+}
 # Spot instance request
 variable "create_spot_instance" {
   description = "Depicts if the instance is a spot instance"
